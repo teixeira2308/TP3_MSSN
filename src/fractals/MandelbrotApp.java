@@ -15,11 +15,11 @@ public class MandelbrotApp implements IProcessing {
     public void setup(PApplet p) {
         plt = new SubPlot(window, viewport,p.width,p.height);
         ms = new MaldelbrotSet(300,plt);
-        ms.display(p,plt);
     }
 
     @Override
     public void draw(PApplet p, float dt) {
+        ms.display(p,plt);
         displayNewWindow(p);
     }
 

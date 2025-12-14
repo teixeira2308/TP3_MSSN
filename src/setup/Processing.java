@@ -16,7 +16,7 @@ public class Processing extends PApplet {
     private int lastUpdateTime;
 
     public static void main(String[] args) {
-        app = new MandelbrotApp();
+        app = new MandelbrotColourApp();
         PApplet.main(Processing.class.getName());
     }
 
@@ -46,4 +46,8 @@ public class Processing extends PApplet {
     public void mousePressed() {
         app.mousePressed(this);
     }
+    @Override
+    public void mouseReleased() {app.mouseReleased(this);}
+    @Override
+    public void mouseDragged() {app.mouseDragged(this);}
 }
