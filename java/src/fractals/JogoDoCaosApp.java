@@ -11,14 +11,14 @@ public class JogoDoCaosApp implements IProcessing {
     private final double[] window = {2, 8, 2, 8};
     private final float[] viewport = {0.1f, 0.1f, 0.8f, 0.8f};
     private SubPlot plt;
-    private PVector[] vertices;  // pontos do triangulo
-    private PVector pontoAtual;  // pt x
+    private PVector[] vertices;
+    private PVector pontoAtual;
     private Random random;
     private int iteracoes;
     private final int maxIteracoes = 10000;
 
     private int[] cores = new int[3];
-    private final int corPontoInicial = 0; // cor preta para o ponto inicial
+    private final int corPontoInicial = 0;
 
     private boolean jogoComecou;
 
